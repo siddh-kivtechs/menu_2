@@ -1,0 +1,73 @@
+body {
+  background-image: url(https://cdn-data.motu.com/django_prod/filer_public/d7/12/d71200d9-4327-4f3d-8858-3f8983fe68fc/mojave-wp.jpg);
+  background-size: cover;
+  background-repeat: none;
+  
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+#dock-container {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 50%;
+}
+#dock-backdrop {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom:0px;
+}
+
+.app {
+  vertical-align: bottom;
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  transition: all 133ms ease-in;
+  transition-delay: 12ms;
+  position: relative;
+  bottom: 0px;
+}
+.app:hover {
+  transition-delay: 12ms;
+  height: 140px;
+  width: 140px;
+  transition: all 133ms ease-in;
+}
+
+  .app#finder {
+    /*app icons from: https://macosicons.com/#/*/
+    background-image: url(https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/affa0e0afa873832cc6fe6550f3917c4_sjoWvWxlwy.png);
+  }
+  .app#launchpad {
+    background-image: url(https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/0cbdb382d360b4e81934066ba739a691_3NhHl2NOKr.png);
+  }
+  .app#safari {
+    background-image: url(https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/d7ea337f7a723548c49849557be8fe28_wXqkLGPZYM.png);
+  }
+  .app#firefox {
+    background-image: url(https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/8079c56bc1fd90f77de78a1fe612da1e_low_res_Firefox.png);
+  }
+  .app#mail {
+    background-image: url(https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/5c9b14b2ce61ffac39dff4957366d89e_zitLA8AWGr.png);
+  }
+  .app#photos {
+    background-image: url(https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/2d6a3169bb27519f1219415e5cb8cb45_EDyikiqSax.png);
+  }
+
+
+
+.glass-morphism {
+  /* From https://css.glass */
+  background: rgba(137, 120, 120, 0.38);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(137, 120, 120, 0.7);
+}
